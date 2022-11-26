@@ -14,6 +14,7 @@ body {
     justify-content: center;
     /* align-items: center; */
 }
+
 .container {
     display: grid;
     align-content: center;
@@ -22,6 +23,7 @@ body {
     /* grid-template-columns: repeat(4, 100px); */
     /* grid-template-rows: minmax(120px, auto)repeat(4, 100px); */
 }
+
 .buttons {
     margin-top: 0;
     display: grid;
@@ -29,6 +31,7 @@ body {
     grid-template-rows: minmax(120px, auto)repeat(4, 100px);
     border: 1px solid black;
 }
+
 .buttons > .span-1 {
     grid-column: span 2;
 }
