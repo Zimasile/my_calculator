@@ -72,7 +72,7 @@ zeroNumber.addEventListener('click', () => {
 
 let addition = document.querySelector('#button-add');
 addition.addEventListener('click', ()=>{
-    display.value += addition.innerHTML;
+    display.value += addition.innerText;
 })
 
 let subtraction = document.querySelector('#button-subtract');
@@ -94,7 +94,7 @@ division.addEventListener('click', ()=>{
 let nonNumber = document.getElementById('button-decimal');
 
 nonNumber.addEventListener('click', () => {
-    let sum = display.innerHTML;
+    let sum = display.value;
     let a = sum.length -1 ;
     if (sum[a] === '.') {
         
@@ -108,19 +108,16 @@ nonNumber.addEventListener('click', () => {
 
 let clear = document.querySelector('#button-clear');
 clear.addEventListener('click', ()=>{
-    let erase = clear.innerText;
     display.value = "";
 })
 
 let equals = document.querySelector('.span-1');
 equals.addEventListener('click', ()=>{
-    let equal = equals.innerText;
-    display.value = eval(display.innerHTML);
+    display.value = eval(display.value);
 })
 
 let buttonDelete = document.querySelector('#button-del');
-remove.addEventListener('click', ()=>{
-    let remove = remove.innerText;
-    display.value = " ";
+buttonDelete.addEventListener('click', ()=>{
+    display.value = display.value.slice(0, -1) ;
 })
 
